@@ -1,0 +1,12 @@
+{
+    "syntaxVersion": "2",
+    "projectPackageId": "com.example.bookstore",
+    "authority": "com.example.bookstore.provider",
+    "providerJavaPackage": "com.example.bookstore.provider",
+    "providerClassName": "BookStorePrivider",
+    "sqliteOpenHelperClassName": "BookStoreSQLiteOpenHelper",
+    "sqliteOpenHelperCallbacksClassName": "BookStoreSQLiteOpenHelperCallbacks",
+    "databaseFileName": "bookstore.db",
+    "databaseVersion": 1,
+    "enableForeignKeys": true
+}

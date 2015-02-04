@@ -1,0 +1,24 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "String"
+        },
+        {
+            "name": "author",
+            "type": "String"
+        },
+        {
+            "name": "pages",
+            "type": "Integer"
+        },
+        {
+            "name": "categories",
+            "type": "String"
+        },
+        {
+            "name": "price",
+            "type": "Double"
+        }
+    ]
+}

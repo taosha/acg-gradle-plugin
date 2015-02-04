@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+
+file('gradle.d').list().each {
+    it ==~ /.+\.gradle/ && apply(from: "gradle.d/$it")
+}
+
+group = 'org.taosha.gradle'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://maven.taosha.org'
+    }
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'org.jraf:android-contentprovider-generator:1.9.+'
+}

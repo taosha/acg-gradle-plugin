@@ -1,0 +1,12 @@
+{
+    "fields": [
+        {
+            "name": "first_name",
+            "type": "String"
+        },
+        {
+            "name": "last_name",
+            "type": "String"
+        }
+    ]
+}

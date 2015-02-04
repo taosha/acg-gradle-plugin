@@ -1,0 +1,22 @@
+# maven
+target
+
+# gradle
+.gradle
+build
+gradle.d/deploy.properties
+
+# idea
+.idea
+*.iml
+*.ipr
+*.iws
+
+# eclipse
+.classpath
+.project
+.settings
+bin
+
+# mac
+*.DS_Store
