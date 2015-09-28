@@ -19,7 +19,7 @@ class AcgPlugin implements Plugin<Project> {
             library = true
         }
 
-        def generate;
+        def generate
         try {
             generate = project.tasks['generate']
         } catch (e) {
@@ -41,14 +41,14 @@ class GenerateTask extends DefaultTask {
         }
     }
 
-    def generateSchema(schema) {
+    def synchronized generateSchema(schema) {
         def schemaDir = project.file(project.acg.schemaDir)
 
         def inputDir = new File(schemaDir, schema.name).path
         final args = [
                 '--input', "$inputDir",
                 '--output', "${project.file(project.acg.sourceDir)}"
-        ];
+        ]
 
         if (project.acg.customDir != null) {
             args << '--custom' << "${project.file(project.acg.customDir)}"
@@ -58,7 +58,7 @@ class GenerateTask extends DefaultTask {
             args << '--library'
         }
 
-        String[] arguments = new String[args.size()];
+        String[] arguments = new String[args.size()]
         for (int i = 0; i < args.size(); i++) {
             arguments[i] = args[i]
         }
@@ -99,6 +99,6 @@ class Schema {
     final String name
 
     Schema(name) {
-        this.name = name;
+        this.name = name
     }
 }

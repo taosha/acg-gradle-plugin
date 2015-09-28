@@ -5,7 +5,7 @@ file('gradle.d').list().each {
 }
 
 group = 'org.taosha.gradle'
-version = '1.9.2'
+version = '1.9.2.1'
 
 repositories {
     mavenCentral()
