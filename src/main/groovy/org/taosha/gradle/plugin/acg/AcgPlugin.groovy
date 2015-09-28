@@ -41,7 +41,7 @@ class GenerateTask extends DefaultTask {
         }
     }
 
-    def generateSchema(schema) {
+    def synchronized generateSchema(schema) {
         def schemaDir = project.file(project.acg.schemaDir)
 
         def inputDir = new File(schemaDir, schema.name).path
